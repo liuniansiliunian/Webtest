@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtest</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Return to top</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="nav-link text-light">Home</div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="p-5 bg-dark text-light text-center text-sm-start">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <h1>This is a <span class="text-warning">year collection</span></h1>
+                    <p class="my-4">As the curtain draws to a close on 2024, I find myself standing at the precipice of
+                        a new year, reflecting on the tapestry of experiences that have woven together the story of my
+                        past twelve months. This annual record serves as a chronicle of my personal
+                        odyssey, capturing the essence of my triumphs, the depths of my struggles, and the joy of my
+                        accomplishments.
+                    </p>
+
+                    <p>In the pages that follow, I document some of pieces of time that have defined my 2024. Each
+                        entry is a snapshot of time, a testament to the days when I pushed boundaries, learned new
+                        lessons, and celebrated the small victories that collectively make up the grand narrative of my
+                        life. Join me as I take you through the highs and lows, the insights and the lessons learned,
+                        and the
+                        memories that have made 2024 a year to remember.</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-right text-secondary offset-md-8 font small">
+                                <p>Shot in Lalaport, Shanghai. <br> Because it's cool so i put it here -> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="btn btn-primary btn-lg">start</button> -->
+                </div>
+                <img src="./img/Gundam1.png" alt="showcase" class="w-25 d-none d-md-block">
+            </div>
+        </div>
+    </section>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-primary text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <b> I know it's werid,but maybe you can -></b>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="container">
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <h3 class="mb-3"> <b> Sign up </b></h3>
+                        <div class="input-group new-input">
+                            <input type="text" class="form-control" placeholder="Enter your Email" id="email">
+                            <input type="password" class="form-control" placeholder="Enter your password" id="password">
+                            <button class="btn btn-dark btn-lg" id="registerButton">Register</button>
+                            <div id="error-message" class="text-danger p-3" style="display: none;">Please fill in all
+                                fields.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <section class="p-5 bg-primary text-light">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3">I know it's werid but you can // <b>  Sign up </b></h3>
+                <div class="input-group new-input">
+                    <input type="text" class="form-control" placeholder="Enter your Email" id="email">
+                    <input type="password" class="form-control" placeholder="Enter your password" id="password">
+                    <button class="btn btn-dark btn-lg" id="registerButton">Register</button>
+                    <div id="error-message" class="text-danger p-3" style="display: none;">Please fill in all fields.</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center">About Games</h2>
+            <p class=" text-secondary ">Games that I have played this year </p>
+            <div class="row g-4">
+                <div class="col">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                ASTLIBRA Revision
+                            </div>
+                            <div class="card-text">
+                                <i> <small>'Brilliant JRPG that flew me back to 1999.'</small> </i>
+                            </div>
+                            <a href="https://zh.astlibrarevision.com/" target="_blank" class=" btn btn-primary mt-2">More info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                Naruto
+                            </div>
+                            <div class="card-text">
+                                <i> <small>'xxx bu yin wo chi'</small> </i>
+                            </div>
+                            <a href="https://hyrz.qq.com/main.shtml" target="_blank" class="btn btn-dark mt-2">More info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-warning text-dark">
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                Black Myth: WuKong
+                            </div>
+                            <div class="card-text">
+                                <i> <small>'Game of the year.'</small> </i>
+                            </div>
+                            <a href="https://www.heishenhua.com/" target="_blank" class="btn btn-light mt-2">More info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container">
+            <h2>Favourite Essays</h2>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="./img/e1.jpg" alt="1" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2>What a ride</h2>
+                    <p class="lead">An 'unbengable' hair</p>
+                    <p>It's a rare occasion to dine out of campus, and as soon as I sat down, I was approached by a
+                        China Unicom salesperson who walked in. </p>
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalLight">Read
+                        more</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal -->
+        <div class="modal fade" id="exampleModalLight" tabindex="-1" aria-labelledby="exampleModalLabelLight"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelLight">Full Article</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Whole article -->
+                        <p>It's a rare occasion to dine out of campus, and as soon as I sat down, I was approached by a
+                            China Unicom salesperson who walked in. It's one thing to ask questions, but they started
+                            with "Sister, hello," which left me completely bewildered. I've heard people being called
+                            "beautiful" before, but being called "sister" is a first.</p>
+                        <p>I rode a bicycle to two shops, and the food was just so-so, and the cost of two days' meals
+                            was gone.</p>
+                        <!-- more... -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Look Back</h2>
+                    <p class="lead">Actually a movie review.</p>
+                    <p>Fujimoto Tatsuki and Oshiya Kiyotaka have crafted a love letter to comic and animation
+                        creators, as well as to the countless supporters who push them forward. </p>
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalDark">Read
+                        more</a>
+                </div>
+                <div class="col-md">
+                    <img src="./img/e2.jpg" alt="1" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- （Modal） -->
+        <div class="modal fade" id="exampleModalDark" tabindex="-1" aria-labelledby="exampleModalLabelDark"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title" id="exampleModalLabelDark">Full Article</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- whole article -->
+                        <p>"Look Back" is a true masterpiece that redefines the potential of Japanese animation. Among
+                            this year's strong lineup of TV anime and their feature films, none can match the production
+                            quality of this work, which is essentially a product of commercial compromise. The credit
+                            goes not only to the original work by Fujimoto Tatsuki but also to the delicate touch of the
+                            director and the rest of the production team. For a detailed production analysis, one can
+                            refer to NBHT's video from a few months ago. Instead of repeating that, let's discuss the
+                            connection and differences between "motion and comics."</p>
+                        <p>The film's strong cinematic style is a main feature of Fujimoto's work, especially in its
+                            storyboarding. This not only reduces the difficulty of adaptation but also makes it easier
+                            to showcase the original flavor. The film remains faithful to the original, from its
+                            storyboards and classic fixed shots to the detailed backgrounds, dialogue pauses, and even
+                            Fujimoto's dynamic drawing challenges.</p>
+                        <p>However, as an adaptation, there are changes. The impactful rain dance spread in the original
+                            work lacks a close-up in the film, and the rhythm is delayed during fixed camera shots,
+                            which results in a perceived lack of impact. Honestly, when the most shocking spread turned
+                            into a smooth but brief card, my first reaction was, "Where's my picture?" But then I
+                            realized this is the difference between the film and the comic's focus. One emphasizes
+                            delicacy, while the other emphasizes expressiveness.</p>
+                        <p>The original has sparse dialogue, so the film might add appropriate sounds to convey emotions
+                            in certain scenes. But apart from the argument between the two characters about their future
+                            choices, there seems to be no other emotionally heightened moments. Instead of voice acting,
+                            the film uses silence (accompanied by music) to transition through scenes of running,
+                            laughing, or potential vocal outbursts. This gives the film a gentle and soothing tone,
+                            similar to the original but with a different effect due to the absence of music and voice
+                            acting, which in comics speeds up reading and creates a sense of close-up, enhancing impact.
+                        </p>
+                        <p>I recall a review saying that "Look Back" is a gentle blow from Fujimoto Tatsuki's heart. If
+                            the original is more of a "heartfelt blow," then the film is more "heartfelt and gentle."
+                            Understanding this difference in focus makes it easier to comprehend the handling of
+                            close-up scenes and fixed camera shots. Comics and animations are different; one is a slice,
+                            the other a stack of slices, with the addition of various art forms, making animations
+                            capable of expressing much more. Animations can convey not just a glance but a blink, a
+                            breath, the weight of the air, the tremble in the chest. Animations should be more delicate,
+                            I've always thought. Therefore, judging animations by the standards of comics might be
+                            unfair. A photo can never capture the beauty of a person seen in real life. A still image
+                            cannot interpret the motion of a living picture. This is what makes "animation" so precious.
+                        </p>
+                        <p>Fujimoto Tatsuki and Oshiya Kiyotaka have crafted a love letter to comic and animation
+                            creators, as well as to the countless supporters who push them forward. This film is
+                            undoubtedly the animation of the year.</p>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-light">1/4</h2>
+            <p class="text-center text-white mb-5">4 moments of 4 seasons.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center ">
+                            <img src="img/spring.jpg" class="mb-3 rounded-circle w-50 mx-auto img-fluid">
+                            <h3 class="card-title"><b>Spring</b></h3>
+                            <p class="card-text">
+                                <b><i>Friendship、Tour.</i></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center ">
+                            <img src="img/summer.jpg" class="mb-3 rounded-circle w-50 mx-auto img-fluid">
+                            <h3 class="card-title"><b>Summer</b></h3>
+                            <p class="card-text">
+                               <b><i>Back to Rainy Night High-School.</i></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center ">
+                            <img src="img/fall.jpg" class="mb-3 rounded-circle w-50 mx-auto img-fluid">
+                            <h3 class="card-title"><b>Fall</b></h3>
+                            <p class="card-text">
+                                <b><i>Home、but faraway.</i></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center ">
+                            <img src="img/winter.jpg" class="mb-3 rounded-circle w-50 mx-auto img-fluid">
+                            <h3 class="card-title"><b>Winter</b></h3>
+                            <p class="card-text">
+                                <b><i>Color me by sunlight.</i></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center">Jokes</h2>
+            <p class="text-secondary text-center mb-5">Just in case you feel very bored.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                             #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">?</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">No joke for #1 and that's the joke.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">It's said that writing long sentences would make fool to read it. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Telephone: 123xxxxx</li>
+                <li class="list-group-item">Mail: 652437157@qq.com</li>
+                <li class="list-group-item">Address: Zhejiang Jinhua ZJNU</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light text-center">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024 </p>
+        </div>
+    </section>
+
+    <script src="bootstrap.bundle.min.js">
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // check current user
+            const currentUser = sessionStorage.getItem('currentUser');
+            if (currentUser) {
+                // create welcome card
+                const card = document.createElement('div');
+                card.id = 'welcome-card';
+                card.className = 'card bg-light';
+                card.style.maxWidth = '200px';
+
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body bg-dark text-light';
+                cardBody.textContent = `Welcome back, ${currentUser}!`;
+
+                card.appendChild(cardBody);
+                document.body.insertBefore(card, document.body.firstChild);
+
+                // remove card after 3 seconds
+                setTimeout(() => {
+                    card.remove();
+                }, 3000);
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var registerButton = document.getElementById('registerButton');
+            var emailInput = document.getElementById('email');
+            var passwordInput = document.getElementById('password');
+            var errorMessage = document.getElementById('error-message');
+
+            registerButton.addEventListener('click', function () {
+                var username = emailInput.value.trim();
+                var password = passwordInput.value.trim();
+
+                if (username === "" || password === "") {
+                    errorMessage.style.display = 'block';
+                } else {
+                    errorMessage.style.display = 'none';
+                    
+                    // Use register function to register
+                    register();
+                    
+                    // Redirect to login page
+                    window.location.href = 'signin.html';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

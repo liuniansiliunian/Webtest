@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+    <script src="signin.js"></script>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link text-light">Sign in</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-light mt-5">
+                    <div class="card-body bg-secondary">
+                        <h2 class="text-center mb-4">Sign In</h2>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="showPassword">
+                                    <label class="form-check-label" for="showPassword">Show Password</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('#loginForm');
+            form.onsubmit = function(event) {
+                event.preventDefault();
+
+                const username = document.getElementById('exampleInputEmail1').value;
+                const password = document.getElementById('exampleInputPassword1').value;
+
+                if (username && password) {
+                    // Use login function to authenticate
+                    login();
+                } else {
+                    alert('Please enter username and password');
+                }
+            };
+
+            // Show/Hide password toggle
+            const showPassword = document.getElementById('showPassword');
+            showPassword.addEventListener('change', function() {
+                const passwordInput = document.getElementById('exampleInputPassword1');
+                if (showPassword.checked) {
+                    passwordInput.type = 'text';
+                } else {
+                    passwordInput.type = 'password';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

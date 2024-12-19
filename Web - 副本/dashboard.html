@@ -1,0 +1,21 @@
+//not been using
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>仪表板</title>
+    <script src="auth.js"></script>
+</head>
+<body onload="checkAuth()">
+    <h1>欢迎回来！</h1>
+    <div id="userInfo"></div>
+    <button onclick="logout()">退出登录</button>
+    
+    <script>
+        // 显示当前用户信息
+        const currentUser = sessionStorage.getItem('currentUser');
+        document.getElementById('userInfo').textContent = `当前用户：${currentUser}`;
+    </script>
+</body>
+</html> 
